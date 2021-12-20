@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#0CB4AE"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+<TableRow
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_width="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="  examination  "
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="   board  "
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:background="@drawable/border"
+        android:layout_height="wrap_content"
+        android:text="  percentage  "
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="   year of passing  "
+        />
+</TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:background="@drawable/border"
+            android:layout_height="wrap_content"
+            android:text="  class X "
+            />
+        <EditText
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_width="20dp"/>
+        <EditText
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_width="20dp"/>
+        <EditText
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_width="20dp"/>
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="  class X11 "
+            />
+        <EditText
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_width="20dp"/>
+        <EditText
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_width="20dp"/>
+        <EditText
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_width="20dp"/>
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:background="@drawable/border"
+            android:layout_height="wrap_content"
+            android:text="  GRAGUATION"
+            />
+        <EditText
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_width="20dp"/>
+        <EditText
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_width="20dp"/>
+        <EditText
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_width="20dp"/>
+    </TableRow>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="#D4DDDC"
+        android:text="submit"
+        android:id="@+id/a1"
+        />
+</TableLayout>
