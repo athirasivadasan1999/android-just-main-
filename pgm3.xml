@@ -1,0 +1,107 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <View
+
+        android:layout_height="250dp"
+
+        android:background="#00000000"/>
+
+
+    <TableRow
+
+        android:id="@+id/tr1"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <TextView
+
+            android:layout_width="183dp"
+
+            android:layout_height="43dp"
+
+            android:text="USERNAME"
+
+            android:textSize="20dp" />
+
+
+        <EditText
+
+            android:id="@+id/ed1"
+
+            android:layout_width="437dp"
+
+            android:layout_height="wrap_content"
+
+            android:textSize="30dp" />
+
+    </TableRow>
+
+
+    <TableRow
+
+        android:id="@+id/tr2"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:layout_width="183dp"
+
+            android:layout_height="43dp"
+
+            android:text="PASSWORD"
+
+            android:textSize="20dp"/>
+
+
+        <EditText
+
+            android:id="@+id/ed2"
+
+            android:layout_width="437dp"
+
+            android:inputType="textPassword"
+
+            android:layout_height="wrap_content"
+
+            android:textSize="30dp" />
+
+     </TableRow>
+
+
+    <Button
+
+        android:id="@+id/b1"
+
+        android:layout_width="254dp"
+
+        android:layout_height="79dp"
+
+        android:text="LOGIN"
+
+        android:background="#ff9090">
+
+    </Button>
+
+
+</TableLayout>
