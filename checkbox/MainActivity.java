@@ -1,39 +1,40 @@
-package com.example.exercise11;
+package com.example.exercise10;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.ProgressBar;
-
-import java.util.Timer;
-import java.util.TimerTask;
+import android.view.View;
+import android.widget.CheckBox;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    ProgressBar pb;
-    int counter=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        prog();
     }
-    public void prog()
+    public void select(View view)
     {
-        pb=(ProgressBar) findViewById(R.id.progressBar);
-        final Timer t=new Timer();
-        TimerTask tt=new TimerTask() {
-            @Override
-            public void run() {
-                counter++;
-                pb.setProgress(counter);
-                if(counter==100)
-                {
-                    t.cancel();
-                }
-            }
-        };
-        t.schedule(tt,0,100);
+        boolean checked=((CheckBox)view).isChecked();
+        switch (view.getId())
+        {
+            case R.id.check1:
+                if (checked)
+                    displaymessage( "Selected BCA");
+                else
+                    displaymessage("Removed BCA");
+                break;
+            case R.id.check2:
+                if(checked)
+                    displaymessage("Selected MCA");
+                else
+                    displaymessage("Removed MCA");
+                break;
+        }
     }
+        public void displaymessage(String s)
+        {
+            Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
+        }
 }
