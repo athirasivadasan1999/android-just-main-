@@ -5,13 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="horizontal">
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/check1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_marginTop="50dp"/>
-
+        android:layout_marginTop="50dp"
+        android:text="BCA"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:onClick="select"/>
+    <CheckBox
+        android:id="@+id/check2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MCA"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:onClick="select"/>
 </LinearLayout>
